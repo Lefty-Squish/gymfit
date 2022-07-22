@@ -1,5 +1,14 @@
 
-('.responsive').slick({
+
+$(document).ready(function(){
+    $('.exerciseBoxes').slick({
+        responsive: true
+    });
+});
+
+
+
+$('.responsive').slick({
     dots: true,
     infinite: false,
     speed: 300,
@@ -34,4 +43,7 @@
         // instead of a settings object
     ]
 });
-		
+
+
+
+

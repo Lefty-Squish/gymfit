@@ -1,7 +1,25 @@
 $primaryYellow: #FFE500
 $primaryColor: #313131
 
+@mixin cf3FadeInOut
+  0%
+    opacity: 1
+  45%
+    opacity: 1
+  55%
+    opacity: 0
+  100%
+    opacity: 0
 
+=keyframes($cf3FadeInOut)
+  @-webkit-keyframes #{cf3FadeInOut}
+    @content
+  @-moz-keyframes #{cf3FadeInOut}
+    @content
+  @-ms-keyframes #{cf3FadeInOut}
+    @content
+  @keyframes #{cf3FadeInOut}
+    @content
 
 body
   background: #FFFFFF
@@ -35,8 +53,22 @@ nav
   font-size: 1.5rem
   font-weight: 400
 
+
 #home
   color: $primaryYellow
+  &:hover
+    transform: scale(1.2)
+
+#about:hover
+  transform: scale(1.2)
+
+#exercises:hover
+  transform: scale(1.2)
+
+#contact:hover
+  transform: scale(1.2)
+
+
 
 .signUp
   justify-self: end
@@ -48,10 +80,13 @@ nav
   padding: 20px 40px
   width: 15%
   box-shadow: 10px 20px 20px rgba(49, 49, 49, 0.2)
-
-.signUp:active
-  background-color: $primaryYellow
-  color: $primaryColor
+  &:active
+    background-color: $primaryYellow
+    color: $primaryColor
+    transform: scale(.98)
+  &:hover
+    background-color: $primaryYellow
+    color: $primaryColor
 
 
 
@@ -60,7 +95,8 @@ nav
 .frontText
   margin-top: 10rem
 
-
+#mainPage
+  height: 1200px
 
 .frontText img
   width: 34rem
@@ -95,17 +131,48 @@ nav
   height: 5rem
   font-size: 1.25rem
   box-shadow: 0 40px 80px rgba(255, 230, 0, 0.3)
+  &:active
+    background-color: $primaryColor
+    color: $primaryYellow
+    transform: scale(.98)
+  &:hover
+    background-color: $primaryColor
+    color: $primaryYellow
 
 
-#exploreExercises:active
-  background-color: $primaryColor
-  color: $primaryYellow
+#cf
+  position: relative
+  height: 172.688rem
+  width: 49.063rem
+  margin: 0 auto
+
+#cf img
+  position: absolute
+  left: 0
+  -webkit-transition: opacity 3s ease-in-out
+  -moz-transition: opacity 3s ease-in-out
+  -o-transition: opacity 3s ease-in-out
+  transition: opacity 3s ease-in-out
 
 
 
-#hfImg
-  height: 100%
-  width: 110%
+#cf img.top
+  animation-name: cf3FadeInOut
+  animation-timing-function: ease-in-out
+  animation-iteration-count: infinite
+  animation-duration: 20s
+  animation-direction: alternate
+
++keyframes(cf3FadeInOut)
+  0%
+    opacity: 1
+  45%
+    opacity: 1
+  55%
+    opacity: 0
+  100%
+    opacity: 0
+
 
 
 //Learn Exercises
@@ -139,6 +206,15 @@ label
   border: none
   outline: none
   padding: 24px 70px
+  &:active
+    background-color: $primaryColor
+    color: $primaryYellow
+    transform: scale(.98)
+  &:hover
+    background-color: $primaryColor
+    color: $primaryYellow
+
+
 
 //Exercise Boxes
 .exerciseBoxes
@@ -161,6 +237,76 @@ label
 
 .box1 img
   padding-bottom: 2rem
+
+
+
+//Showing Results
+#results
+  background-color: #F9F9F9
+  padding: 2rem 0
+
+.container h3
+  margin-bottom: 3rem
+
+.resultBoxes
+  width: 100%
+  display: flex
+  margin-bottom: 3rem
+
+.resultBoxes .row
+  display: flex
+  width: 100%
+  justify-content: space-evenly
+
+.resultBoxes .col
+  margin-left: 2rem
+
+.box2
+  display: flex
+  flex-wrap: wrap
+  align-content: flex-end
+  background-color: #FFFFFF
+  border-top: 7px solid $primaryYellow
+  height: 26rem
+  width: 100%
+  margin-bottom: 3rem
+  font-weight: 600
+
+
+
+
+.box2 ul > li
+  display: inline-block
+  justify-content: flex-end
+
+
+.upperArms
+  background-color: $primaryYellow
+  color: #9D8D00
+  padding: 0.5rem 1rem
+  border-radius: 40px
+  margin-right: 1rem
+  margin-left: -2rem
+
+
+
+.triceps
+  background-color: #FFABAB
+  color: #C95C5C
+  padding: 0.5rem 1rem
+  border-radius: 40px
+
+.box2 p
+  font-size: 24px
+  align-self: end
+  width: 60%
+
+
+
+
+
+
+
 
 
 

@@ -28,14 +28,14 @@
                         <img src="Images/Gym-Fit.svg" alt="Gym-Fit Logo" id="gymFitLogo">
                         <nav>
                             <p id="home">Home</p>
-                            <p>About</p>
-                            <p>Exercises</p>
-                            <p>Contact</p>
+                            <p id="about">About</p>
+                            <p id="exercises">Exercises</p>
+                            <p id="contact">Contact</p>
                         </nav>
                         <button type="button" name="Sign Up" class="signUp">Sign Up</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="mainPage">
                     <div class="col-6">
                         <div class="frontText">
                             <img src="Images/health&fitness_logo.png" alt="Health And fitness">
@@ -48,7 +48,10 @@
                         <button type="button" name="Explore Exercises" id="exploreExercises">Explore Exercises</button>
                     </div>
                     <div class="col-6">
-                        <img src="Images/Hero%20Img.jpg" alt="muscular man" id="hfImg">
+                        <div id="cf">
+                            <img src="Images/top.png" alt="muscular woman" class="bottom">
+                            <img src="Images/bottom.png" alt="muscular man" class="top">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +91,79 @@
                         <div class="box1">
                             <img src="Images/dumbbell.png" alt="Dumbbell">
                             <p>Waist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid" id="results">
+                <div class="container">
+                    <h3><strong>Showing Results</strong></h3>
+                    <div class="resultBoxes">
+<!--                        Column 1  -->
+                        <div class="col">
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
+                        </div>
+<!--                        Column 2  -->
+                        <div class="col">
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
+                        </div>
+<!--                        Column 3  -->
+                        <div class="col">
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="box2">
+                                    <ul>
+                                        <li class="upperArms">Upper Arms</li>
+                                        <li class="triceps">Triceps</li>
+                                    </ul>
+                                    <p>Assisted Standing Triceps</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,8 +239,10 @@
 
 
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="jquery/jquery.js"></script>
         <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+
+
     </body>
 </html>
